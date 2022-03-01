@@ -1,4 +1,4 @@
-# 1 bit CMOS Full Adder 
+# CMOS one bit Full Adder 
 ## Contents
 1. Abstract 
 2. Introduction
@@ -27,7 +27,7 @@ The CMOS implementation of conventional 1 bit full adder(28T) in Synopsys custom
 ## Waveforms
 ![Screenshot (830)](https://user-images.githubusercontent.com/56624086/156175537-68098ec0-d93d-41a4-9f88-030cac1846ae.png)
 ## Netlist
-
+Netlist can be found [here]()
 ## Author 
 ## Acknoledgements
 ## Reference
