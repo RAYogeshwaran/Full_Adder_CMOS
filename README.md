@@ -27,7 +27,12 @@ The CMOS implementation of conventional 1 bit full adder(28T) in Synopsys custom
 ## Waveforms
 ![Screenshot (830)](https://user-images.githubusercontent.com/56624086/156175537-68098ec0-d93d-41a4-9f88-030cac1846ae.png)
 ## Netlist
-Netlist can be found [here]()
+Netlist can be found [here](https://github.com/RAYogeshwaran/Full_Adder_CMOS/blob/main/netlist.txt)
 ## Author 
+R A Yogeshwaran, B.Tech Electronics and Communication, Vellore Institute of Technology, Vellore, Tamil Nadu.
 ## Acknoledgements
+[Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)  
+IIT hyderabad  
+[Synopsys Company](https://www.synopsys.com/)
 ## Reference
+A. K. Yadav, B. P. Shrivatava and A. K. Dadoriya, "Low power high speed 1-bit full adder circuit design at 45nm CMOS technology," 2017 International Conference on Recent Innovations in Signal processing and Embedded Systems (RISE), 2017, pp. 427-432, doi: 10.1109/RISE.2017.8378203.
