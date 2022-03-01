@@ -1,4 +1,5 @@
 # CMOS one bit Full Adder 
+This repository contains the information of CMOS adder circuit and it details made as part of hackathon conducted by  
 ## Contents
 1. Abstract 
 2. Introduction
@@ -24,6 +25,8 @@ Carry = A.B + B.Cin + Cin.A
 
 
 ## Tool Information
+The **Synopsys Custom Compiler™** design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. The Custom Compiler design environment includes features for mixed-signal design entry, design debug, simulation management, analysis, and reporting. For layout, Custom Compiler provides fast and user-friendly polygon editing features and boosts productivity with its pioneering visually-assisted automation flow.  
+The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.  
 
 ## Circuit Design
 ![Screenshot (825)](https://user-images.githubusercontent.com/56624086/156175274-59325739-9528-48a1-9107-e1c23cdb9b8e.png)
@@ -44,4 +47,4 @@ R A Yogeshwaran, B.Tech Electronics and Communication, Vellore Institute of Tech
 IIT hyderabad  
 [Synopsys Company](https://www.synopsys.com/)
 ## Reference
-A. K. Yadav, B. P. Shrivatava and A. K. Dadoriya, "Low power high speed 1-bit full adder circuit design at 45nm CMOS technology," 2017 International Conference on Recent Innovations in Signal processing and Embedded Systems (RISE), 2017, pp. 427-432, doi: 10.1109/RISE.2017.8378203.
+[1] A. K. Yadav, B. P. Shrivatava and A. K. Dadoriya, "Low power high speed 1-bit full adder circuit design at 45nm CMOS technology," 2017 International Conference on Recent Innovations in Signal processing and Embedded Systems (RISE), 2017, pp. 427-432, doi: 10.1109/RISE.2017.8378203.
