@@ -15,7 +15,14 @@
 ## Abstract
 The CMOS implementation of conventional 1 bit full adder(28T) in Synopsys custom compiler. Sum and carry is generated as output. 
 ## Introduction
-The design presented in this repository is a one bit full Adder circuit. Implemented using CMOS design. This circuit takes three inputs namely A,B,Cin and performs its addition and the output is shown with the sum value along with the carry bit. This is a basic and essential circuit for the construction of higher order adders. The adder implemented here is a conventional adder which uses 28 MOS Transistors.
+The design presented in this repository is a one bit full Adder circuit. Implemented using CMOS design. This circuit takes three inputs namely A,B,Cin and performs its addition and the output is shown with the sum value along with the carry bit. This is a basic and essential circuit for the construction of higher order adders. The adder implemented here is a conventional adder which uses 28 MOS Transistors.  
+Truth table of one bit full adder is as follows:  
+![image](https://user-images.githubusercontent.com/56624086/156185340-c69b3af7-51a9-4cfc-a404-733eb6f997df.png)  
+Sum = A ⊕ B ⊕ Cin  
+Carry = A.B + B.Cin + Cin.A  
+
+
+
 ## Tool Information
 
 ## Circuit Design
