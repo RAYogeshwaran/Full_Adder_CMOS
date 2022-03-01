@@ -1,0 +1,91 @@
+*  Generated for: PrimeSim
+*  Design library name: ray_01
+*  Design cell name: tb_conventional_full_adder
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Tue Mar  1 13:00:56 2022
+
+.global gnd!
+********************************************************************************
+* Library          : ray_01
+* Cell             : conventional_full_adder
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt conventional_full_adder a b carry cin sum vdd gnd_1
+xm30 carry net125 net124 net124 n105 w=0.1u l=0.03u nf=1 m=1
+xm14 net57 net125 net53 net53 n105 w=0.1u l=0.03u nf=1 m=1
+xm13 net53 a gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm12 net53 b gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm11 net45 b gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm10 net45 a gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm9 net37 b net39 net39 n105 w=0.1u l=0.03u nf=1 m=1
+xm8 net57 a net37 net37 n105 w=0.1u l=0.03u nf=1 m=1
+xm7 sum net57 gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm6 net39 cin gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm5 net53 cin gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm4 net125 cin net45 net45 n105 w=0.1u l=0.03u nf=1 m=1
+xm1 net5 b gnd_1 gnd_1 n105 w=0.1u l=30n nf=1 m=1
+xm0 net125 a net5 net5 n105 w=0.1u l=30n nf=1 m=1
+xm29 net57 a net118 net118 p105 w=0.1u l=0.03u nf=1 m=1
+xm28 net118 b net114 net114 p105 w=0.1u l=0.03u nf=1 m=1
+xm27 net114 cin vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm26 net108 a vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm25 net108 b vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm24 net108 cin vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm23 carry net125 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm22 net125 b net90 net90 p105 w=0.1u l=0.03u nf=1 m=1
+xm21 net90 a vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm20 net125 cin net78 net78 p105 w=0.1u l=0.03u nf=1 m=1
+xm19 vdd b net78 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm18 net78 a vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm3 sum net57 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm2 net57 net125 net108 net108 p105 w=0.1u l=0.03u nf=1 m=1
+.ends conventional_full_adder
+
+********************************************************************************
+* Library          : ray_01
+* Cell             : tb_conventional_full_adder
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 a b carry c sum net14 gnd! conventional_full_adder
+v3 c gnd! dc=0 pulse ( 1.8 0 0 0.1u 0.1u 10u 20u )
+v2 b gnd! dc=0 pulse ( 1.8 0 0 0.1u 0.1u 20u 40u )
+v1 a gnd! dc=0 pulse ( 1.8 0 0 0.1u 0.1u 40u 80u )
+v5 net14 gnd! dc=1.8
+r13 sum gnd! r=100k
+r12 carry gnd! r=100k
+
+
+
+
+
+
+
+
+.tran '0.01u' '80u' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(a) v(b) v(c) v(carry) v(sum)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
