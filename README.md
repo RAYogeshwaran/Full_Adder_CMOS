@@ -1,5 +1,5 @@
 # CMOS one bit Full Adder 
-This repository contains the information of CMOS adder circuit and it details made as part of hackathon conducted by  
+This repository presents CMOS one bit adder design made in Synopsys Custom Compiler. 
 ## Contents
 1. Abstract 
 2. Introduction
@@ -14,19 +14,22 @@ This repository contains the information of CMOS adder circuit and it details ma
 12. Acknoledgements
 13. Reference
 ## Abstract
-The CMOS implementation of conventional 1 bit full adder(28T) in Synopsys custom compiler. Sum and carry is generated as output. 
+The CMOS implementation of conventional 1 bit full adder(28T) in Synopsys custom compiler. The circuit is capable of performing addition of two 1 bit numbers considering the carry and produces the sum and carry as output.
 ## Introduction
-The design presented in this repository is a one bit full Adder circuit. Implemented using CMOS design. This circuit takes three inputs namely A,B,Cin and performs its addition and the output is shown with the sum value along with the carry bit. This is a basic and essential circuit for the construction of higher order adders. The adder implemented here is a conventional adder which uses 28 MOS Transistors.  
+The design presented in this repository is a one bit full Adder circuit. Implemented using CMOS design. This circuit takes three inputs namely A, B, Cin and performs its addition and the output is shown with the sum value along with the carry bit. This is a basic and essential circuit for the construction of higher order adders. The adder implemented here is a conventional adder which uses 28 MOS Transistors.  
 Truth table of one bit full adder is as follows:  
 ![image](https://user-images.githubusercontent.com/56624086/156185340-c69b3af7-51a9-4cfc-a404-733eb6f997df.png)  
-Sum = A ⊕ B ⊕ Cin  
-Carry = A.B + B.Cin + Cin.A  
-
-
+The Full Adder circuit can be implemented using the Truth Table and K-Map simplification.  
+**Sum = A ⊕ B ⊕ Cin  
+Carry = A.B + B.Cin + Cin.A**  
+A Full Adder's circuit can be used as a part of many other larger circuits like Ripple Carry Adder, which adds n-bits simultaneously. The dedicated multiplication circuit uses Full Adder's circuit to perform Carryout Multiplication. Full Adders are used in ALU- Arithmetic Logic Unit.
 
 ## Tool Information
 The **Synopsys Custom Compiler™** design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. The Custom Compiler design environment includes features for mixed-signal design entry, design debug, simulation management, analysis, and reporting. For layout, Custom Compiler provides fast and user-friendly polygon editing features and boosts productivity with its pioneering visually-assisted automation flow.  
+  
 The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.  
+  
+**PrimeWave™** Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. 
 
 ## Circuit Design
 ![Screenshot (825)](https://user-images.githubusercontent.com/56624086/156175274-59325739-9528-48a1-9107-e1c23cdb9b8e.png)
